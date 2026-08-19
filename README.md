@@ -1,10 +1,35 @@
 # A1: Programs to Processes
 
-The assignment explores how a C program is transformed into a running process. The toolchain from source code through preprocessing, compilation, assembly, linking, and loading, and inspect how instructions are encoded as machine code will be followed. Finally, write a small program that performs a system call directly to see how user programs interact with the operating system. The goal is to connect high-level code to low-level execution.
+This assignment explores how a C program is transformed into a running process!
+
+You will learn how to **compile** a C program into assembly and how to **assemble** and **link** files into a final executable!
+
+We will be inspecting the underlying **assembly** language. We will making small modifications to the assembly itself and even calling an **assembly function** from C!
+
+Finally, we will write a small program that performs a system call directly to see how user programs interact with the operating system. 
+
+After doing these steps, low-level execution will be less of a mystery! We will understand exactly what happens when we run a C program on an Intel x86 CPU.
+
+## Part 0: Setup Github Codespaces
+
+We recommend that you complete this assignment on Github Codespaces.
+
+To get started:
+- Go to GitHub Codespaces: [https://github.com/codespaces]
+- Hit "New Codespace" Green Button
+- Either use a "blank" project or start from this assignment repository.
+
+BEWARE: You can not complete this assignment on a CPU that is not Linux/Intel x86. 
+
+If you want to run this assignment on a different machine (not Github codespaces) it is your responsibility to check your CPU/OS via the the command: 
+```
+$ uname -a
+Linux annaad-ThinkPad-X1-Carbon-Gen-12 6.17.0-35-generic #35~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 19:30:42 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+If you see `x86_64` and `GNU/Linux` you can do this exercise! Otherwise: use Github Codespaces!!
 
 ## Part 1: Our first C program
-
-
 
 `mini.c` contains three partially written functions:
 
@@ -185,6 +210,12 @@ Here, you will see a list of syscalls made by the ./caller process.
 > **TASK: Answer these questions in questions.txt**
 > - Which lines of the output syscalls correspond to the two you added? (Label your answer with `(1)`. This label must come at the start of the line.)
 > - What is one other syscall (not write) that you see in the output. Look it up and describe what this syscall does. (Label your answer with `(2)`. This label must come at the start of the line.)
+
+## Submitting on Gradescope
+
+To submit on gradescope, submit all the files in this directory to the assignment upload.
+
+You should see the autograder run and report a score. Ensure that you are happy with this score! Feel free to resubmit as many times as you wish before the deadline.
 
 
 
